@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+
+    <script>
+      var name = "Ali";
+      console.log(name, typeof name, isNaN(name)); // true
+
+      var age = 33;
+      console.log(age, typeof age, isNaN(age)); //true
+
+      var counter = 332434n;
+      console.log(counter, typeof counter);
+      /*isNaN(counter) gelince konsol hatası */
+
+      var student = {};
+      console.log(student, typeof student, isNaN(student)); //true
+
+      var salary = null;
+      console.log(salary, typeof salary, isNaN(salary)); // false, js'de null ==0 oldugu icin sayi kabul etti
+
+      var score;
+      console.log(score, typeof score, isNaN(score));
+
+    </script>
+  </body>
+</html>
