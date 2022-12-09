@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1><em>Hello DOM</em></h1>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde odit
+      ullam repellendus alias debitis quaerat omnis veniam ab repudiandae
+      maiores deleniti inventore, odio numquam pariatur quo rerum incidunt
+      animi?
+    </p>
+
+    <ul class="menu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+
+    <script>
+      const headingEl = document.querySelector("h1");
+      console.log(headingEl.innerText);
+
+      headingEl.innerText = "<u>Hello Javascript</u>";
+      headingEl.innerHTML = "<u><em>Hello Javascript</em></u>";
+      console.log(headingEl.innerText);
+
+
+      const homeEl = document.querySelector(".menu li:first-child");
+      homeEl.innerText = "Anasayfa";
+      console.log(homeEl.innerHTML);
+
+    </script>
+  </body>
+</html>
