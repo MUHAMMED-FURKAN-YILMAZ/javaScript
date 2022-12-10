@@ -24,17 +24,27 @@
 
     <script>
       const headingEl = document.querySelector("h1");
-      console.log(headingEl.innerText);
+      console.log(headingEl.innerText); // getter
 
-      headingEl.innerText = "<u>Hello Javascript</u>";
+      headingEl.innerText = "<u>Hello Javascript</u>"; //setter
       headingEl.innerHTML = "<u><em>Hello Javascript</em></u>";
       console.log(headingEl.innerText);
 
-
       const homeEl = document.querySelector(".menu li:first-child");
+      console.log(homeEl);
       homeEl.innerText = "Anasayfa";
       console.log(homeEl.innerHTML);
 
+      const listItems = document.querySelectorAll(".menu li");
+      console.log(listItems);
+      console.log(listItems.length);
+      listItems[0].innerHTML = "Contact";
+      console.log(typeof listItems[0]);
+      console.log(typeof listItems);
+
+      const dizi = ["ali", "veli"];
+      console.log(typeof dizi);
+      console.log(typeof dizi[0]);
     </script>
   </body>
 </html>
