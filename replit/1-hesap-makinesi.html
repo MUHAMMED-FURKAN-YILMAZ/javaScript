@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/r-1-hesap-makinesi.css" />
+  </head>
+  <body>
+    <h1>HESAP MAKİNESİ</h1>
+    <form class="con">
+      <div class="makine">
+        <div class="display-border">
+          <input
+            class="display-border-input"
+            type="text"
+            placeholder=""
+            id="displayResult"
+            name="displayResult"
+          />
+        </div>
+
+        <div class="satir">
+          <input
+            type="reset"
+            class="btn button-clear"
+            value="C"
+            name="clear"
+            onclick="calculate(clear.value)"
+          />
+          <input
+            type="button"
+            class="btn button-op bPlus"
+            value="+"
+            name="plus"
+            onclick="calculate(plus.value)"
+          />
+        </div>
+
+        <div class="satir">
+          <input
+            type="button"
+            class="btn button b7"
+            value="7"
+            name="b7"
+            onclick="calculate(b7.value)"
+          />
+
+          <input
+            type="button"
+            class="btn button b8"
+            value="8"
+            name="b8"
+            onclick="calculate(b8.value)"
+          />
+
+          <input
+            type="button"
+            class="btn button b9"
+            value="9"
+            name="b9"
+            onclick="calculate(b9.value)"
+          />
+
+          <input
+            type="button"
+            class="btn button-op bMinus"
+            value="-"
+            name="minus"
+            onclick="calculate(minus.value)"
+          />
+        </div>
+
+        <div class="satir">
+          <input
+            type="button"
+            class="btn button b4"
+            value="4"
+            name="b4"
+            onclick="calculate(b4.value)"
+          />
+
+          <input
+            type="button"
+            class="btn button b5"
+            value="5"
+            name="b5"
+            onclick="calculate(b5.value)"
+          />
+
+          <input
+            type="button"
+            class="btn button b6"
+            value="6"
+            name="b6"
+            onclick="calculate(b6.value)"
+          />
+
+          <input
+            type="button"
+            class="btn button-op bMultiply"
+            value="*"
+            name="multiply"
+            onclick="calculate(multiply.value)"
+          />
+        </div>
+
+        <div class="satir">
+          <input
+            type="button"
+            class="btn button b1"
+            value="1"
+            name="b1"
+            onclick="calculate(b1.value)"
+          />
+
+          <input
+            type="button"
+            class="btn button b2"
+            value="2"
+            name="b2"
+            onclick="calculate(b2.value)"
+          />
+
+          <input
+            type="button"
+            class="btn button b3"
+            value="3"
+            name="b3"
+            onclick="calculate(b3.value)"
+          />
+
+          <input
+            type="button"
+            class="btn button-op bDivide"
+            value="/"
+            name="divide"
+            onclick="calculate(divide.value)"
+          />
+        </div>
+
+        <div class="satir">
+          <input
+            type="button"
+            class="btn button bDot"
+            value="."
+            name="dot"
+            onclick="calculate(dot.value)"
+          />
+          <input
+            type="button"
+            class="btn button b0"
+            value="0"
+            name="b0"
+            onclick="calculate(b0.value)"
+          />
+
+          <input
+            type="button"
+            class="btn button-op bEquals"
+            value="="
+            name="equal"
+            onclick="displayResult.value=eval(displayResult.value)"
+          />
+        </div>
+      </div>
+    </form>
+
+    <script src="../assets/js/r-1-hesap-makinesi.js"></script>
+  </body>
+</html>
