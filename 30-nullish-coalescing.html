@@ -7,30 +7,27 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="number" id="txtScore" />
-    <button id="btnCalculate" onclick="calculate()">Calculate</button>
-
     <script>
       let user = {
         firstName: "Ali",
         lastName: "Veli",
       };
-      //user = null;
-      let displayName = "";
+      user = null;
 
-      // İF METHOD
-      /*       if (user == null) {
-        displayName = "Anonymous";
-      } else {
-        displayName = `${user.firstName} ${user.lastName}`;
-      } */
+      //IF METHOD
+      /*
+      if (user === null || user === undefined) {
+        user = { firstName: "Anonymous", lastName: "" };
+      } 
 
+      */
       // TERNARY METHOD
-      /*       displayName = user ===null || user===undefined ? "Anonymous" : `${user.firstName} ${user.lastName}`;
-       */
+      //user = user === null ||  user===undefined ? { firstName: "Anonymous", lastName: "" } : user
 
-      // NULLISH COALESCING METHODMETHOD
-      displayName = user  ?? "Anonymous";
+      //NULLISH
+      user = user ?? { firstName: "Anonymous", lastName: "" };
+
+      const displayName = `${user.firstName} ${user.lastName}`;
 
       console.log(displayName);
     </script>
