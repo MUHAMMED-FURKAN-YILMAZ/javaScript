@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/42-scope-practice.css" />
+  </head>
+  <body>
+    <script>
+      const courses = [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "Javascript",
+        "SASS",
+        "React",
+      ];
+
+      console.log(courses);
+      console.log(courses[3]);
+      console.log(courses.length);
+      console.log(courses[courses.length - 1]);
+
+      courses[3] = "JS";
+      console.log(courses);
+
+      //courses = ["A", "B", "C", "D"]; // referans değiştirilmeye çalışıldığı için hata verir
+
+      const courses2 = ["HTML", 6, "Bootstrap", { x: 34, y: 67 }, "React"];
+
+      console.log(courses2);
+    </script>
+  </body>
+</html>
