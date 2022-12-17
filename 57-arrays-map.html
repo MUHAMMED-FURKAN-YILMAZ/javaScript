@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const arr = [2, 45, 212, 56, 85, 2, 341, 34, 56, 87];
+
+      const newArr = arr.map((item) => item * 2);
+      console.log(newArr);
+
+      const newArr2 = arr.map((item) => {
+        return { name: "Ali", count: item };
+      });
+      console.log(newArr2);
+
+      const animals = ["fil", "kuş", "deve", "fare", "kuş", "kedi"];
+
+      const newAnimals = animals.map((animal) => animal.toUpperCase());
+      console.log(newAnimals);
+
+      const employees = [
+        { name: "ali", location: "Istanbul", gender: "M" },
+        { name: "veli", location: "Izmir", gender: "M" },
+        { name: "ayse", location: "Ankara", gender: "F" },
+      ];
+
+      const names = employees.map((item) => item.name);
+      console.log(names);
+
+      const names2 = employees.map((item) => {
+        if (item.location === "Istanbul") {
+          return item.name;
+        }
+        return false;
+      });
+      console.log(names2);
+    </script>
+  </body>
+</html>

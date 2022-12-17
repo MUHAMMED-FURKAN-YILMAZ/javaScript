@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        border-radius: 2rem;
+        padding: 2rem;
+        text-align: center;
+        width: 30vw;
+      }
+      #txtSayi {
+        border-radius: 2rem;
+        margin: 1rem;
+        padding: 0.3rem;
+      }
+      #guess {
+        border-radius: 2rem;
+        background-color: black;
+        color: white;
+        display: none;
+        padding: 0.3rem;
+        cursor: pointer;
+      }
+      #start {
+        border-radius: 2rem;
+        background-color: black;
+        color: white;
+        padding: 0.3rem;
+        cursor: pointer;
+      }
+      #message {
+        margin-top: 0.9rem;
+      }
+      #kalanHak {
+        margin-top: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="aciklama">0 ile 100 aralığında bir sayı tahmin ediniz.</div>
+
+      <input type="number" id="txtSayi" disabled />
+      <button type="button" id="guess">Tahmin Et</button>
+      <button type="button" id="start">Oyunu Başlat</button>
+
+      <div id="message"></div>
+      <div id="kalanHak"></div>
+    </div>
+
+    <script src="3-sayi-tahmin.js"></script>
+  </body>
+</html>
