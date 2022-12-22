@@ -1,5 +1,5 @@
 document.querySelector("#frmLogin").addEventListener("submit", (e) => {
-  e.preventDefault(); // submit butonunun formu submit etmesin iengelledik
+  e.preventDefault(); // submit butonunun formu submit etmesin engelledik
   const emailEl = document.getElementById("txtEmail");
   const passwordEl = document.getElementById("txtPassword");
 
