@@ -14,22 +14,27 @@
         console.log("Hello2");
       };
       console.log("----Senkron çalışma----");
+
       console.log("Hello1");
       sayHello1();
       console.log("Hello3");
       console.log("Hello4");
+
       // Asenkron çalışma örneği
       const sayHello2 = () => {
         setTimeout(() => {
           console.log("Hello2");
         }, 1);
       };
+
       const sayHello3 = () => {
         setTimeout(() => {
           console.log("Hello3");
         }, 0);
       };
+
       console.log("----Asenkron çalışma----");
+
       console.log("Hello1");
       sayHello2();
       sayHello3();
